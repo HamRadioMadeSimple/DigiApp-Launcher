@@ -16,7 +16,7 @@ jobs:
         run: |
           python3 -m pip install --user pyflakes vermin
           python3 -m pyflakes run_digiapp.py digiapp/ tests/ tools/
-          python3 -m vermin -q --no-tips -t=3.5- --violations run_digiapp.py digiapp/
+          ~/.local/bin/vermin -q --no-tips -t=3.5- --violations run_digiapp.py digiapp/
       - name: Self-tests
         run: |
           python3 -m unittest discover -s tests -v 2>&1 | tee test_out.txt
