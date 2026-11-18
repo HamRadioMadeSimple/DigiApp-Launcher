@@ -1,0 +1,7 @@
+# DigiApp Launcher - Python packages
+# Linux needs only Python 3 + Tk (python3-tk); wmctrl and xdotool come from the system's package manager.
+# Windows build (build_windows.bat installs these, plus PyInstaller):
+psutil>=5.6 ; sys_platform == "win32"
+comtypes>=1.1 ; sys_platform == "win32"
+# Optional on both: drag and drop of program icons onto the list
+tkinterdnd2>=0.3

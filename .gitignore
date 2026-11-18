@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+build/
+dist/
+output/
+*.spec.bak
+.vscode/
+.idea/
+
+# own development notes and user data - never in the public repo
+DigiApp_Session_Handoff.md
+settings.json
+settings-unreadable-*.json
+launched.json
+close-log.txt
+
+# Word guides are the owner's masters; only the PDFs are published
+*.docx

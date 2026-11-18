@@ -1,0 +1,22 @@
+{
+  "DefaultProfile": "JS8 Net",
+  "SkipRunning": true,
+  "Profiles": [
+    {
+      "Name": "JS8 Net",
+      "Apps": [
+        {"Enabled": true, "Name": "Flrig",   "Path": "flrig",   "Args": "", "Delay": 15, "Minimize": true},
+        {"Enabled": true, "Name": "JS8Call", "Path": "js8call", "Args": "", "Delay": 2,  "Minimize": false}
+      ]
+    },
+    {
+      "Name": "Fldigi Messaging",
+      "Apps": [
+        {"Enabled": true, "Name": "Flrig",  "Path": "flrig",  "Args": "", "Delay": 15, "Minimize": true},
+        {"Enabled": true, "Name": "Fldigi", "Path": "fldigi", "Args": "", "Delay": 2,  "Minimize": false},
+        {"Enabled": true, "Name": "Flmsg",  "Path": "flmsg",  "Args": "", "Delay": 2,  "Minimize": false},
+        {"Enabled": true, "Name": "Flamp",  "Path": "flamp",  "Args": "", "Delay": 2,  "Minimize": false}
+      ]
+    }
+  ]
+}

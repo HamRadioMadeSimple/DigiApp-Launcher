@@ -1,0 +1,36 @@
+# Runs the self-tests and code checks on every push and pull request.
+name: Tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  linux:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Tk for Python
+        run: sudo apt-get update && sudo apt-get install -y python3-tk
+      - name: Code checks (pyflakes, still runs on Python 3.5+)
+        run: |
+          python3 -m pip install --user pyflakes vermin
+          python3 -m pyflakes run_digiapp.py digiapp/ tests/ tools/
+          python3 -m vermin -q --no-tips -t=3.5- --violations run_digiapp.py digiapp/
+      - name: Self-tests
+        run: |
+          python3 -m unittest discover -s tests -v 2>&1 | tee test_out.txt
+          grep -q "^OK" test_out.txt
+          ! grep -q "Tk for Python is not installed" test_out.txt
+
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Self-tests
+        run: |
+          python -m pip install -r requirements.txt
+          python -m unittest discover -s tests -v
