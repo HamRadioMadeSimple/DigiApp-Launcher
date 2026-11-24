@@ -34,8 +34,8 @@ GitHub runs the self-tests on Linux and Windows on every push and pull request.
 
 ## Where things are
 
-How the program is put together: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md). Building the downloads:
-[docs/BUILDING.md](docs/BUILDING.md). Light/dark colours: [docs/THEMES.md](docs/THEMES.md).
+How the program is put together: [ARCHITECTURE.md](ARCHITECTURE.md). Building the downloads:
+[dev/BUILDING.md](dev/BUILDING.md). Light/dark colours: [dev/THEMES.md](dev/THEMES.md).
 
 Keep `.sh` files with LF line endings and `.bat` / `.iss` files with CRLF (`.gitattributes` does this).
 

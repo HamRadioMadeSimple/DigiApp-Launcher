@@ -41,7 +41,7 @@ Name: "editicon"; Description: "Put a DigiApp Launcher - Edit icon on the deskto
 
 [Files]
 Source: "dist\{#MyAppExe}"; DestDir: "{app}"; Flags: ignoreversion
-Source: "docs\README-Windows.txt"; DestDir: "{app}"; DestName: "README.txt"; Flags: ignoreversion
+Source: "dev\README-Windows.txt"; DestDir: "{app}"; DestName: "README.txt"; Flags: ignoreversion
 Source: "docs\DigiApp-Launcher-Guide.pdf"; DestDir: "{app}"; Flags: ignoreversion skipifsourcedoesntexist
 
 [Icons]

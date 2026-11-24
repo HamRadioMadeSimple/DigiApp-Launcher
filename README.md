@@ -41,7 +41,7 @@ It installs into `~/Applications/DigiApp-Launcher` and adds the menu, desktop an
 
 **Guides (PDF):** [Install and User Guide](docs/DigiApp-Launcher-Guide.pdf) ·
 [Installing on Linux (one page)](docs/Installing_DigiApp_Launcher_on_Linux.pdf). Short text versions:
-[`docs/README-Windows.txt`](docs/README-Windows.txt), [`docs/README-Linux.txt`](docs/README-Linux.txt).
+[`dev/README-Windows.txt`](dev/README-Windows.txt), [`dev/README-Linux.txt`](dev/README-Linux.txt) (these go inside the downloads as README.txt).
 
 ## Testers and feedback
 
@@ -53,7 +53,7 @@ Found a bug or have an idea? Open an [issue](https://github.com/HamRadioMadeSimp
 
 ## For building
 
-How the program is put together: [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md). Building: [`docs/BUILDING.md`](docs/BUILDING.md). Helping: [`CONTRIBUTING.md`](CONTRIBUTING.md). In short: `build_windows.bat` on Windows, `bash build_linux.sh` on Linux;
+How the program is put together: [`ARCHITECTURE.md`](ARCHITECTURE.md). Building: [`dev/BUILDING.md`](dev/BUILDING.md). Helping: [`CONTRIBUTING.md`](CONTRIBUTING.md). In short: `build_windows.bat` on Windows, `bash build_linux.sh` on Linux;
 results go to `output/`. The version is set in `digiapp/__init__.py`. On GitHub, publishing a release with the tag
 `v<version>` builds and attaches the Setup.exe, the portable zip and the Linux `.tar.gz` (`.github/workflows/release.yml`);
 the self-tests run on every push (`tests.yml`).
@@ -69,7 +69,8 @@ the self-tests run on every push (`tests.yml`).
 | `DigiAppLauncher.spec` / `.iss` / `build_windows.bat` | Windows program, installer, build |
 | `build_linux.sh`, `linux_install.sh`, `update_linux.sh`, `linux_uninstall.sh`, `install_linux_launcher.sh` | Linux build and install scripts |
 | `DigiApp.bat`, `digiapp.sh` | run from this folder without building |
-| `docs/` | user guides (PDF), readmes, BUILDING.md, ARCHITECTURE.md, THEMES.md |
+| `docs/` | user guides (PDF) only - the website's Guides button opens this folder |
+| `dev/` | notes for developers: BUILDING.md, THEMES.md, and the README texts put into the downloads |
 | `.gitattributes` | keeps `.sh` files LF and `.bat` files CRLF |
 | `tests/` | self-tests (run by both builds) |
 | `tools/` | mock radio app for testing, icon and guide generators, code checks, project zip |

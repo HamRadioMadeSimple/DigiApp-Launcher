@@ -43,7 +43,7 @@ if exist "%PORT%.zip" del /q "%PORT%.zip"
 if exist "%PORT%.zip.part" del /q "%PORT%.zip.part"
 mkdir "%PORT%"
 copy /y dist\DigiAppLauncher.exe "%PORT%\" >nul
-copy /y docs\README-Windows.txt "%PORT%\README.txt" >nul
+copy /y dev\README-Windows.txt "%PORT%\README.txt" >nul
 if exist docs\DigiApp-Launcher-Guide.pdf copy /y docs\DigiApp-Launcher-Guide.pdf "%PORT%\" >nul
 %PY% tools\make_portable_zip.py "%PORT%"
 if errorlevel 1 goto fail

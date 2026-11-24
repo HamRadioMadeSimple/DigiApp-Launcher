@@ -1,9 +1,9 @@
 # DigiApp Launcher - Architecture
 
 How the program is put together, for contributors. For *using* it see `docs/DigiApp-Launcher-Guide.pdf`;
-for *building* it see `docs/BUILDING.md`; for what changed in each version see `CHANGELOG.md`.
+for *building* it see `dev/BUILDING.md`; for what changed in each version see `CHANGELOG.md`.
 
-Version described: **1.3.3** (2026-11-18). Colours and the light/dark rules: `docs/THEMES.md`.
+Version described: **1.3.3** (2026-11-18). Colours and the light/dark rules: `dev/THEMES.md`.
 
 ---
 
@@ -83,7 +83,8 @@ does its one job (launch, close, or show the editor) and exits.
 | `build_windows.bat`, `DigiAppLauncher.spec`, `DigiAppLauncher.iss` | Windows build: PyInstaller one-file exe, portable zip, Inno Setup installer. |
 | `DigiApp.bat`, `digiapp.sh` | Run from the source folder without building. |
 | `tools/` | `make_project_zip.py` (source zip), `make_portable_zip.py`, `make_guide.js` (Word guide), `make_icon.py`, `check_code.sh` (pyflakes, Python 3.5 check, line endings, tests), `mock_radio_app.py` (fake radio program for testing). |
-| `docs/` | User guide (generated), readmes, `BUILDING.md`, this file. |
+| `docs/` | User guides (PDF) only. |
+| `dev/` | `BUILDING.md`, `THEMES.md`, and the README texts that go inside the downloads. |
 
 ---
 
@@ -279,7 +280,7 @@ Known quirks: Cinnamon caches `.desktop` actions (Ctrl+Alt+Esc refreshes it); on
   and buttons (program locations, options, status and wait times **bold** for readability), 11 for the profile
   name, tip and header readouts, 13 for LAUNCH / STOP / CLOSE APPS, 20 for the title. No typewriter font.
 - Windows title bar follows the theme (`style_window(..., dark)`). Full standard for all the station apps,
-  with both palettes: `docs/THEMES.md`.
+  with both palettes: `dev/THEMES.md`.
 
 ---
 

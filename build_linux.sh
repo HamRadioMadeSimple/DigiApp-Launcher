@@ -21,7 +21,7 @@ mkdir -p "$STAGE/digiapp" output
 cp digiapp/*.py "$STAGE/digiapp/"
 cp run_digiapp.py icon.png linux_install.sh update_linux.sh install_linux_launcher.sh \
    linux_uninstall.sh digiapp.sh CHANGELOG.md "$STAGE/"
-cp docs/README-Linux.txt "$STAGE/README.txt"
+cp dev/README-Linux.txt "$STAGE/README.txt"
 [ -f docs/DigiApp-Launcher-Guide.pdf ] && cp docs/DigiApp-Launcher-Guide.pdf "$STAGE/"
 [ -f docs/Installing_DigiApp_Launcher_on_Linux.pdf ] && cp docs/Installing_DigiApp_Launcher_on_Linux.pdf "$STAGE/"
 # .sh files must have Linux (LF) line endings - a Windows (CRLF) save gives confusing errors on Linux.
