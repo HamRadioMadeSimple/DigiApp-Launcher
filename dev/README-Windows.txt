@@ -2,7 +2,7 @@ DigiApp Launcher for Windows
 ================================
 Opens your digital-mode radio programs in order, waiting between each one so each
 program is ready before the next starts. One click on a gold taskbar icon.
-(The full illustrated guide is DigiApp-Launcher-Guide.pdf.)
+(Quick Start: DigiApp_Launcher_Quick_Start.pdf. The full illustrated guide is DigiApp-Launcher-Guide.pdf.)
 
 INSTALL
 1. Double-click DigiAppLauncher-<version>-Setup.exe.

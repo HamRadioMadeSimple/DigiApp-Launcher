@@ -43,6 +43,7 @@ Name: "editicon"; Description: "Put a DigiApp Launcher - Edit icon on the deskto
 Source: "dist\{#MyAppExe}"; DestDir: "{app}"; Flags: ignoreversion
 Source: "dev\README-Windows.txt"; DestDir: "{app}"; DestName: "README.txt"; Flags: ignoreversion
 Source: "docs\DigiApp-Launcher-Guide.pdf"; DestDir: "{app}"; Flags: ignoreversion skipifsourcedoesntexist
+Source: "docs\DigiApp_Launcher_Quick_Start.pdf"; DestDir: "{app}"; Flags: ignoreversion skipifsourcedoesntexist
 
 [Icons]
 ; Start menu and desktop icons are for all users of the PC.

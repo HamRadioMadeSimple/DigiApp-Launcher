@@ -45,6 +45,7 @@ mkdir "%PORT%"
 copy /y dist\DigiAppLauncher.exe "%PORT%\" >nul
 copy /y dev\README-Windows.txt "%PORT%\README.txt" >nul
 if exist docs\DigiApp-Launcher-Guide.pdf copy /y docs\DigiApp-Launcher-Guide.pdf "%PORT%\" >nul
+if exist docs\DigiApp_Launcher_Quick_Start.pdf copy /y docs\DigiApp_Launcher_Quick_Start.pdf "%PORT%\" >nul
 %PY% tools\make_portable_zip.py "%PORT%"
 if errorlevel 1 goto fail
 rem the folder was only the zip's working copy - remove it so output\ holds just the two downloads

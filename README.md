@@ -39,7 +39,7 @@ bash ~/Downloads/"$(tar -tzf "$F" | head -n 1 | cut -d/ -f1)"/update_linux.sh
 It installs into `~/Applications/DigiApp-Launcher` and adds the menu, desktop and panel icons
 (`bash linux_install.sh --radio` in the unpacked folder puts it in `~/Radio` instead).
 
-**Guides (PDF):** [Install and User Guide](docs/DigiApp-Launcher-Guide.pdf) ·
+**Guides (PDF):** [Quick Start](docs/DigiApp_Launcher_Quick_Start.pdf) · [Install and User Guide](docs/DigiApp-Launcher-Guide.pdf) ·
 [Installing on Linux (one page)](docs/Installing_DigiApp_Launcher_on_Linux.pdf). Short text versions:
 [`dev/README-Windows.txt`](dev/README-Windows.txt), [`dev/README-Linux.txt`](dev/README-Linux.txt) (these go inside the downloads as README.txt).
 

@@ -99,7 +99,7 @@ if [ "$DEST" != "$HERE" ]; then
     cp "$HERE"/digiapp/*.py "$DEST/digiapp/" || exit 1
     cp "$HERE/run_digiapp.py" "$HERE/icon.png" "$DEST/" || exit 1
     for f in linux_install.sh install_linux_launcher.sh update_linux.sh linux_uninstall.sh digiapp.sh \
-             README.txt CHANGELOG.md DigiApp-Launcher-Guide.pdf DigiApp-Launcher-Guide.docx; do
+             README.txt CHANGELOG.md DigiApp_Launcher_Quick_Start.pdf DigiApp-Launcher-Guide.pdf DigiApp-Launcher-Guide.docx; do
         [ -f "$HERE/$f" ] && cp "$HERE/$f" "$DEST/"
     done
 fi

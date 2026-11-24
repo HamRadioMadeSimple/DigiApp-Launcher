@@ -3,7 +3,7 @@ DigiApp Launcher for Linux
 Opens your digital-mode radio programs in order, waiting between each one.
 Works on Ubuntu 16.04 and newer, Linux Mint, Debian, Fedora, Arch, openSUSE,
 Raspberry Pi OS and other Linux systems with Python 3.
-(The full illustrated guide is DigiApp-Launcher-Guide.pdf.)
+(Quick Start: DigiApp_Launcher_Quick_Start.pdf. The full illustrated guide is DigiApp-Launcher-Guide.pdf.)
 
 INSTALL
 1. Extract this package (for example in your Downloads folder).

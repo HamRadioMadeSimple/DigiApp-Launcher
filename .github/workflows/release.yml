@@ -77,7 +77,7 @@ jobs:
             echo ""
             echo "If Windows says \"Windows protected your PC\", click **More info > Run anyway**. The program isn't code-signed."
             echo ""
-            echo "Full guide: [DigiApp-Launcher-Guide.pdf]($R/blob/main/docs/DigiApp-Launcher-Guide.pdf) (also inside every download)."
+            echo "Guides: [Quick Start]($R/blob/main/docs/DigiApp_Launcher_Quick_Start.pdf) and the full [Install and User Guide]($R/blob/main/docs/DigiApp-Launcher-Guide.pdf) (also inside every download)."
             echo ""
             echo "## What's new"
             echo ""

@@ -23,6 +23,7 @@ cp run_digiapp.py icon.png linux_install.sh update_linux.sh install_linux_launch
    linux_uninstall.sh digiapp.sh CHANGELOG.md "$STAGE/"
 cp dev/README-Linux.txt "$STAGE/README.txt"
 [ -f docs/DigiApp-Launcher-Guide.pdf ] && cp docs/DigiApp-Launcher-Guide.pdf "$STAGE/"
+[ -f docs/DigiApp_Launcher_Quick_Start.pdf ] && cp docs/DigiApp_Launcher_Quick_Start.pdf "$STAGE/"
 [ -f docs/Installing_DigiApp_Launcher_on_Linux.pdf ] && cp docs/Installing_DigiApp_Launcher_on_Linux.pdf "$STAGE/"
 # .sh files must have Linux (LF) line endings - a Windows (CRLF) save gives confusing errors on Linux.
 # The copies in the download are always fixed; the project files are only reported, so you can fix them too.
